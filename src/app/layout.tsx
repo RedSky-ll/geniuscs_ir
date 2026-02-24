@@ -59,23 +59,48 @@ const yekanBakh = localFont({
   variable: "--font-yekan-bakh",
 });
 
+import { MobileCallButton } from "@/components/mobile-call-button";
+
+
+
 export const metadata: Metadata = {
+
   title: "جنیوس سی اس | راهکارهای مدرن وب و موبایل",
+
   description: "آژانس طراحی و توسعه حرفه‌ای برای تجربه‌های دیجیتال برتر.",
+
 };
 
+
+
 export default function RootLayout({
+
   children,
+
 }: {
+
   children: React.ReactNode;
+
 }) {
+
   return (
+
     <html lang="fa" dir="rtl">
+
       <body
+
         className={`${yekanBakh.className} ${geistSans.variable} ${geistMono.variable} ${yekanBakh.variable} antialiased bg-background text-foreground transition-colors duration-500`}
+
       >
+
         {children}
+
+        <MobileCallButton />
+
       </body>
+
     </html>
+
   );
+
 }
