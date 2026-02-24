@@ -128,19 +128,6 @@ export function Navbar() {
                   </Link>
                 </motion.div>
               ))}
-              <motion.div
-                initial={{ x: -20, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.3 }}
-              >
-                <Link
-                  href="/contact"
-                  onClick={() => setIsOpen(false)}
-                  className="text-5xl font-black tracking-tighter text-brand"
-                >
-                  {dict.contact}
-                </Link>
-              </motion.div>
             </nav>
           </motion.div>
         )}
